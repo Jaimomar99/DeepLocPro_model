@@ -16,7 +16,7 @@ Protein subcellular location prediction is a widely explored task in bioinformat
 
     1. Get data from psort and uniprot
     
-    2. Run graph-part for homology partitioning
+    2. Run graph-part for homology partitioning: [Github](https://github.com/fteufel/signalp-6.0)
     
     3. Create embeddings using pre-trained language model
     
@@ -38,7 +38,7 @@ Protein subcellular location prediction is a widely explored task in bioinformat
 
     - create_fasta
 
-    - make_embeddings_fsdp_v2: the first version was loading the model in a deterministic random way
+    - make_embeddings_fsdp_v2
 
     - compute_dataset
 
@@ -58,6 +58,15 @@ Protein subcellular location prediction is a widely explored task in bioinformat
 
 - Helping functions
     - single_useful_functions
+
+**Data**
+- example.fasta
+- graph_part_example.csv: output of graph_part
+- example_data.csv: input to the model
+- embeddings: embeddings of the fasta data
+
+**env file**
+* DeepLocPro_model.yaml : packages needed
 
 
 **Contact information**

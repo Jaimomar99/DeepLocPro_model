@@ -1,7 +1,6 @@
 '''
 Generate ESM-2 embeddings (per position) and save as one 
 file per sequence. Use md5 hash of sequence as file name.
-Adapted from DeepTMHMM and esm fsdp example.
 '''
 from hashlib import md5
 from esm import FastaBatchedDataset, pretrained, FastaBatchedDataset

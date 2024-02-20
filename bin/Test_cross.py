@@ -13,12 +13,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--output_folder", type=str, help="Indicate the folder within DeepLocPro")
 args = parser.parse_args()
 
-path= ""
-out_path = f"{path}/{args.output_folder}/"
+out_path = f"/../{args.output_folder}/"
 
-emb_dir = f"{path}/data/single_embeddings_v2/"
-data_file = f'{path}/data/single_label_dataset.csv'
-part_file = f"{path}/data/single_graphpart.csv"
+emb_dir = "../data/embeddings/"
+data_file = '../data/example_data.csv'
+part_file = "../data/graph_part_example.csv"
 
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')

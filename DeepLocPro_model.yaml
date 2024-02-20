@@ -1,0 +1,14 @@
+name: DeepLocPro_model
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - pytorch
+  - tqdm
+  - scikit-learn
+  - matplotlib
+  - esm
+  - argparse
+  - hashlib

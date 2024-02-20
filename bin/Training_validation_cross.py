@@ -13,7 +13,7 @@ import argparse
 #instructions:
 '''
 Full cross validation
-For all hyper combinations, we run the 4 models, cross validating, and takingthe  average of F1 of the validation.
+For all hyper combinations, we run the 4 models, cross validating, and taking the  average of F1 of the validation.
 and take best hyperparameter combination, keep the 4 models.
 '''
 
@@ -22,12 +22,12 @@ parser.add_argument("--output_folder", type=str, help="Indicate the folder withi
 parser.add_argument("--epochs", type=str, help="Indicate the number of epochs for training and validation")
 args = parser.parse_args()
 
-path= ""
-out_path = f"{path}/{args.output_folder}/"
 
-emb_dir = f"{path}/data/single_embeddings_v2/"
-data_file = f'{path}/data/single_label_dataset.csv'
-part_file = f"{path}/data/single_graphpart.csv"
+out_path = f"/../{args.output_folder}/"
+
+emb_dir = "../data/embeddings/"
+data_file = '../data/example_data.csv'
+part_file = "../data/graph_part_example.csv"
 
 
 uf.initialize_outer_metadata(path=out_path)
