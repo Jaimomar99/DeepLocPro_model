@@ -71,19 +71,19 @@ def generate_esm_embeddings(fasta_file, esm_embeddings_dir, repr_layers=48):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "fasta_file",
+        "--fasta_file",
         type=pathlib.Path,
         help="FASTA file on which to extract representations",
     )
     parser.add_argument(
-        "output_dir",
+        "--output_embeddings",
         type=pathlib.Path,
         help="output directory for extracted representations",
     )
     args = parser.parse_args()
 
-
-    generate_esm_embeddings(args.fasta_file, args.output_dir, repr_layers=33)
+    path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    generate_esm_embeddings(f"{path}/{args.fasta_file}", f"{path}/{args.output_embeddings}", repr_layers=33)
 
 if __name__ == '__main__':
     main()

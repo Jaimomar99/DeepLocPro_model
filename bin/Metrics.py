@@ -12,7 +12,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--output_folder", type=str, help="Indicate the folder within ProDeepLoc")
 args = parser.parse_args()
 
-out_path = f"/../{args.output_folder}/"
+path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+out_path = f"{path}/{args.output_folder}/"
 
 predicts = [pd.read_csv(f"{out_path}final_5_dfs/{f}", index_col=0) for f in os.listdir(f"{out_path}/final_5_dfs")]
 predicts = pd.concat(predicts, axis=0)

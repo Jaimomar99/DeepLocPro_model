@@ -23,11 +23,11 @@ parser.add_argument("--epochs", type=str, help="Indicate the number of epochs fo
 args = parser.parse_args()
 
 
-out_path = f"/../{args.output_folder}/"
-
-emb_dir = "../data/embeddings/"
-data_file = '../data/example_data.csv'
-part_file = "../data/graph_part_example.csv"
+path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+out_path = f"{path}/{args.output_folder}/"
+emb_dir = f"{path}/data/embeddings/"
+data_file = f'{path}/data/example_data.csv'
+part_file = f"{path}/data/graph_part_example.csv"
 
 
 uf.initialize_outer_metadata(path=out_path)
