@@ -61,9 +61,9 @@ Protein subcellular location prediction is a widely explored task in bioinformat
 
 **Data**
 - example.fasta: Example fasta sequences
-- graph_part_example.csv: output of graph_part
-- example_data.csv: input to the model
-- embeddings: embeddings of the fasta data
+- graph_part_example.csv: Example output of graph_part
+- example_data.csv: Example input to the model
+- embeddings: embeddings of the example fasta data
 
 **env file**
 * DeepLocPro_model.yaml : packages needed
@@ -74,7 +74,7 @@ Protein subcellular location prediction is a widely explored task in bioinformat
 To run the training, you will need:
 
     1. Clone the repository
-    2. Create conda env by: conda activate env -f DeepLocPro_model.yaml
+    2. Create conda env by: conda create env -f DeepLocPro_model.yaml
     3. Generate fasta file
     4. Create a csv file with the same format as data/example_data/csv (use bin/merging_db.ipnyb as guide)
     5. Output of graph_part in a csv format
