@@ -18,7 +18,7 @@ Protein subcellular location prediction is a widely explored task in bioinformat
     
     2. Run graph-part for homology partitioning: [Github](https://github.com/fteufel/signalp-6.0)
     
-    3. Create embeddings using pre-trained language model
+    3. Create embeddings using pre-trained language model (esm)
     
     4. Run model finding best hyperparameters
     
@@ -60,13 +60,14 @@ Protein subcellular location prediction is a widely explored task in bioinformat
     - single_useful_functions
 
 **Data**
-- example.fasta
+- example.fasta: Example fasta sequences
 - graph_part_example.csv: output of graph_part
 - example_data.csv: input to the model
 - embeddings: embeddings of the fasta data
 
 **env file**
 * DeepLocPro_model.yaml : packages needed
+* Create conda env: conda activate env -f DeepLocPro_model.yaml
 
 
 **Contact information**
