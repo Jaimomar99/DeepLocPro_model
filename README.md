@@ -83,7 +83,3 @@ To run the training, you will need:
         - Train & validate the model
         - Calculate metrics
 Warning, data/example will only show the format need, the pipeline will not run b/c too few sequences.
-
-**Contact information**
-
-Questions on the scientific aspects of the DeepLocPro 1.0 method should go to Henrik Nielsen, hennin@dtu.dk.
