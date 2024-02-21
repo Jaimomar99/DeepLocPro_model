@@ -1,6 +1,9 @@
 # DeepLocPro
 DeepLocPro predicts the subcellular localization of prokaryotic proteins. It can differentiate between 6 different localizations: Cytoplasm, Cytoplasmic membrane, Periplasm, Outer membrane, Cell wall and surface, and extracellular space.
 
+
+**This repository contains the Python implementation and training code for the DeepLocPro model.** If you are looking for the prediction service to process protein sequences, please go to https://services.healthtech.dtu.dk/services/DeepLocPro-1.0/ or https://biolib.com/KU/DeepLocPro/.
+
 Please cite:
 
 ### Predicting the subcellular location of prokaryotic proteins.
@@ -16,7 +19,7 @@ Protein subcellular location prediction is a widely explored task in bioinformat
 
     1. Get data from psort and uniprot
     
-    2. Run graph-part for homology partitioning: [Github](https://github.com/fteufel/signalp-6.0)
+    2. Run graph-part for homology partitioning: [Github](https://github.com/graph-part/graph-part)
     
     3. Create embeddings using pre-trained language model (esm)
     
@@ -84,5 +87,3 @@ To run the training, you will need:
         - Calculate metrics
 data/example will only show the format need, the pipeline will not run b/c too few sequences.
 
-# Warning
-This is the code to train and modify the DeepLocPro model. If you are looking to run predictions, please see https://services.healthtech.dtu.dk/services/DeepLocPro-1.0/
