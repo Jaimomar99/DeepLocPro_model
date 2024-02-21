@@ -82,4 +82,7 @@ To run the training, you will need:
         - Generate embeddings
         - Train & validate the model
         - Calculate metrics
-Warning, data/example will only show the format need, the pipeline will not run b/c too few sequences.
+data/example will only show the format need, the pipeline will not run b/c too few sequences.
+
+# Warning
+This is the code to train and modify the DeepLocPro model. If you are looking to run predictions, please see https://services.healthtech.dtu.dk/services/DeepLocPro-1.0/
