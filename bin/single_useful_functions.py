@@ -270,14 +270,16 @@ def get_metrics(predicts_int, trues, title="select"):
     # https://towardsdatascience.com/evaluating-multi-label-classifiers-a31be83da6ea
     """
     Calculate various metrics for evaluating the performance of a classification model.
+    Note: Take argmax in case of multi-label classification. Otherwise the metrics will be calculated for multiclass classification.
     """ 
     metrics = {}
 
     # metrics["pred_num_labels"] = f"{predicts_int.sum(1).mean():.3f}"
-    metrics["ACC"] = f"{accuracy_score(trues, predicts_int):.3f}"
+    metrics["ACC"] = f"{accuracy_score(trues.argmax(1), predicts_int.argmax(1)):.3f}"
     # metrics["Jaccard"] = f"{jaccard_score(trues, predicts_int, average='weighted', zero_division=0):.3f}"
     # metrics["MicroF1"] = f"{f1_score(trues, predicts_int, average='micro', zero_division=0):.3f}"
-    metrics["MacroF1"] = f"{f1_score(trues, predicts_int, average='macro', zero_division=0):.3f}"
+    metrics["MacroF1"] = f"{f1_score(trues.argmax(1), predicts_int.argmax(1), average='macro', zero_division=0):.3f}"
+    metrics["MultiMCC"] = f"{matthews_corrcoef(trues.argmax(1), predicts_int.argmax(1)):.3f}"
     metrics["MCC"] = {}
     for i in range(6):
         metrics["MCC"][LABEL_TO_INT(i)] = f"{matthews_corrcoef(trues[:,i], predicts_int[:,i]):.3f}"
