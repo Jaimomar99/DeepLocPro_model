@@ -2,6 +2,7 @@
 DeepLocPro predicts the subcellular localization of prokaryotic proteins. It can differentiate between 6 different localizations: Cytoplasm, Cytoplasmic membrane, Periplasm, Outer membrane, Cell wall and surface, and extracellular space.
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 **This repository contains the Python implementation and training code for the DeepLocPro model.** If you are looking for the prediction service to process protein sequences, please go to https://services.healthtech.dtu.dk/services/DeepLocPro-1.0/ or https://biolib.com/KU/DeepLocPro/.
 
 Please cite:
