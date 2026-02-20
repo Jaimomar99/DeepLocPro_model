@@ -9,8 +9,7 @@ Please cite:
 
 ### Predicting the subcellular location of prokaryotic proteins.
 
-Jaime Moreno, Henrik Nielsen, Ole Winther, Felix Teufel.
-Biorxiv 2024.01.04.574157; doi: [https://doi.org/10.1101/2024.01.04.574157](https://academic.oup.com/bioinformatics/article/40/12/btae677/7900293)
+Jaime Moreno, Henrik Nielsen, Ole Winther, Felix Teufel (2024). Predicting the subcellular location of prokaryotic proteins with DeepLocPro. *Bioinformatics*, 40(12). https://doi.org/10.1093/bioinformatics/btae677
 
 **Abstract**
 
