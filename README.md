@@ -10,7 +10,7 @@ Please cite:
 ### Predicting the subcellular location of prokaryotic proteins.
 
 Jaime Moreno, Henrik Nielsen, Ole Winther, Felix Teufel.
-Biorxiv 2024.01.04.574157; doi: https://doi.org/10.1101/2024.01.04.574157
+Biorxiv 2024.01.04.574157; doi: [https://doi.org/10.1101/2024.01.04.574157](https://academic.oup.com/bioinformatics/article/40/12/btae677/7900293)
 
 **Abstract**
 
